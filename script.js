@@ -12,11 +12,11 @@ const btnCall = document.querySelector('.contact-call');
 const btnWpp = document.querySelector('.contact-wpp');
 
 btnCall.addEventListener('click', () => {
-  window.location.href = 'tel:+0116133333'; // Número de teléfono
+  window.location.href = 'tel:+51922662994'; // Número de teléfono
 });
 
 btnWpp.addEventListener('click', () => {
-  const phone = '51999999999'; // Cambia por tu número WhatsApp con código país sin + ni espacios
+  const phone = '51922662994'; // Cambia por tu número WhatsApp con código país sin + ni espacios
   const url = `https://wa.me/${phone}`;
   window.open(url, '_blank');
 });
