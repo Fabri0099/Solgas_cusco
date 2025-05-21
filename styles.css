@@ -1,0 +1,253 @@
+/* Reset y básicos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* Barra de navegación */
+nav {
+  background: linear-gradient(90deg, #2a2941, #573a41);
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  color: white;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-left img {
+  width: 120px; /* Ajusta el tamaño del logo */
+}
+
+.nav-left ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-left ul li {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav-left ul li:hover {
+  text-decoration: underline;
+}
+
+/* Botón hamburguesa inicialmente oculto */
+#btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+/* Búsqueda y botón */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right input[type="search"] {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.nav-right button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-right button:hover {
+  background: white;
+  color: #573a41;
+}
+
+/* Sección principal */
+.main-section {
+  display: flex;
+  padding: 40px 60px;
+  gap: 60px;
+  align-items: center;
+  background: linear-gradient(90deg, #573a41, #2a2941);
+  color: white;
+}
+
+.main-text {
+  flex: 1;
+  max-width: 400px;
+}
+
+.main-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.main-text h1 .orange {
+  color: #f37021;
+}
+
+.main-text hr {
+  width: 50px;
+  height: 3px;
+  background: #f37021;
+  border: none;
+  margin-top: 10px;
+}
+
+/* Sifuminado sobre la imagen */
+.main-image {
+  position: relative;
+  flex: 1;
+  text-align: right;
+}
+
+.main-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.main-image::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to right, rgba(87,58,65,0.7), rgba(42,41,65,0.7));
+  border-radius: 10px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Botones circulares de contacto */
+.contact-buttons {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-wpp {
+  background: #4caf50; /* verde WhatsApp */
+}
+
+.contact-call {
+  background: #1976d2; /* azul llamada */
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Mostrar botón hamburguesa */
+  #btn-menu {
+    display: block;
+  }
+
+  /* Ocultar menú por defecto */
+  #menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  /* Mostrar menú cuando activo */
+  #menu.active {
+    display: flex;
+  }
+
+  .nav-left ul li {
+    font-size: 18px;
+  }
+
+  /* Ajustar nav-right */
+  .nav-right {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Sección principal: apilar vertical */
+  .main-section {
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 30px;
+  }
+
+  .main-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .main-image {
+    text-align: center;
+  }
+
+  /* Ajuste de botones de contacto */
+  .contact-buttons {
+    right: 10px;
+    top: auto;
+    bottom: 20px;
+    flex-direction: row;
+    transform: none;
+    gap: 10px;
+  }
+
+  .contact-buttons button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
