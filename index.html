@@ -1,50 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="SOLGAS Cusco: Venta y distribución de gas doméstico e industrial en toda la región de Cusco. ¡Pedidos rápidos y seguros!">
-	<title>SOLGAS Cusco | Distribuidor de Gas Doméstico e Industrial | Pedidos (+51) 922-662-994</title>
-	<link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="Imagen/png" href="Imagen/logo_solgas.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOLGAS Cusco | Distribuidor de Gas Doméstico e Industrial | Pedidos (+51) 922-662-994</title>
 
+  <!-- Meta SEO -->
+  <meta name="description" content="SOLGAS Cusco: Venta y distribución de gas doméstico e industrial en toda la región de Cusco. ¡Pedidos rápidos y seguros!">
+  <meta name="keywords" content="solgas, gas cusco, gas doméstico, gas industrial, balones de gas, distribución de gas, pedidos de gas, venta de gas, solgas peru, solgas cusco teléfono">
+  <meta name="author" content="SOLGAS Cusco">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://solgascusco.store/" />
+
+  <!-- Open Graph (Facebook, WhatsApp, etc.) -->
+  <meta property="og:title" content="SOLGAS Cusco | Venta y Distribución de Gas Doméstico e Industrial">
+  <meta property="og:description" content="Compra gas doméstico o industrial en SOLGAS Cusco. Pedidos rápidos, seguros y con atención personalizada. ¡Contáctanos al (+51) 922-662-994!">
+  <meta property="og:image" content="https://solgascusco.store/Imagen/logo_solgas.png">
+  <meta property="og:url" content="https://solgascusco.store/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SOLGAS Cusco | Venta y Distribución de Gas Doméstico e Industrial">
+  <meta name="twitter:description" content="Gas doméstico e industrial en Cusco. ¡Pedidos rápidos y seguros! Llámanos al (+51) 922-662-994.">
+  <meta name="twitter:image" content="https://solgascusco.store/Imagen/logo_solgas.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Imagen/logo_solgas.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Datos estructurados (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SOLGAS Cusco",
+    "image": "https://solgascusco.store/Imagen/logo_solgas.png",
+    "@id": "https://solgascusco.store/",
+    "url": "https://solgascusco.store/",
+    "telephone": "+51922662994",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cusco",
+      "addressRegion": "Cusco",
+      "addressCountry": "PE"
+    },
+    "openingHours": "Mo-Su 08:00-20:00",
+    "description": "Venta y distribución de gas doméstico e industrial en Cusco. Pedidos rápidos, seguros y confiables.",
+    "sameAs": [
+      "https://www.facebook.com/solgascusco",
+      "https://wa.me/51922662994"
+    ]
+  }
+  </script>
 </head>
+
 <body>
+  <!-- Barra de navegación -->
   <nav>
-  <div class="nav-left">
-    <img src="Imagen/S1L.png" alt="Solgas Logo" />
-    <ul id="menu">
-      <li>Nosotros</li>
-      <li>Productos y Servicios</li>
-      <li>Sostenibilidad</li>
-      <li>Noticias</li>
-      <li>Contacto</li>
-    </ul>
-    <button id="btn-menu" aria-label="Abrir menú">&#9776;</button>
-  </div>
-  <div class="nav-right">
-    <input type="search" placeholder="Buscar..." />
-    <button id="btn-pedido">Central de pedidos (+51) 922-662-994</button>
-  </div>
-</nav>
-
-
-  <section class="main-section">
-    <div class="main-text">
-      <h1><span class="orange">Confianza</span> <br />que rinde</h1>
-      <hr />
+    <div class="nav-left">
+      <img src="Imagen/S1L.png" alt="Logo de Solgas Cusco" />
+      <ul id="menu">
+        <li>Nosotros</li>
+        <li>Productos y Servicios</li>
+        <li>Sostenibilidad</li>
+        <li>Noticias</li>
+        <li>Contacto</li>
+      </ul>
+      <button id="btn-menu" aria-label="Abrir menú">&#9776;</button>
     </div>
-    <div class="main-image">
-      <img src="Imagen/s2.jpeg" alt="Mujer cocinando" />
+    <div class="nav-right">
+      <input type="search" placeholder="Buscar..." aria-label="Buscar en el sitio" />
+      <button id="btn-pedido">Central de pedidos (+51) 922-662-994</button>
     </div>
-  </section>
+  </nav>
 
+  <!-- Sección principal -->
+  <main>
+    <section class="main-section">
+      <div class="main-text">
+        <h1><span class="orange">Confianza</span> <br>que rinde</h1>
+        <hr>
+      </div>
+      <div class="main-image">
+        <img src="Imagen/s2.jpeg" alt="Cliente usando gas Solgas en la cocina" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <!-- Botones de contacto flotantes -->
   <div class="contact-buttons">
-    <button class="contact-call" title="Llamar">📞</button>
-    <button class="contact-wpp" title="WhatsApp">💬</button>
+    <button class="contact-call" title="Llamar a Solgas Cusco" aria-label="Llamar a Solgas Cusco">📞</button>
+    <button class="contact-wpp" title="Contactar por WhatsApp" aria-label="Contactar por WhatsApp">💬</button>
   </div>
-  <script src="script.js"></script>
 
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
 </body>
-
 </html>
+
+
